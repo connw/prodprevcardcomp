@@ -147,4 +147,8 @@ a {
     a {
         width: 85%;
     }
+    
+    a:hover {
+        background-color: #1A4032;
+    }
 }
