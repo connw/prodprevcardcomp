@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Fraunces";
+    src: url('Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf');
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('Montserrat-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #F2EAE2;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    width: 100%;
+}
+
+section {
+    background-color: #FFF;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.perfume {
+    color: #6C7289;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #1C232B;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+}
+
+.description {
+    color: #6C7289;
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+
+.price {
+    color: #3D8168;
+    display: inline-block;
+    font-family: 'Fraunces', serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.price-prev {
+    color: #6C7289;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: line-through;
+    transform: translateY(-10px);
+}
+
+a {
+    background-color: #3D8168;
+    border-radius: 8px;
+    color: #FFF;
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+}
+
+.shopping-cart {
+    padding-right: 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+    section {
+        height: auto;
+        width: 90%;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        border-radius: 15px 15px 0 0;
+        display: block;
+        width: 100%;
+    }
+
+    div {
+        margin: 1rem;
+    }
+
+    h1,
+    .price {
+        margin: 1rem 0;
+    }
+
+    .price-prev {
+        margin-left: 1rem;
+    }
+
+    a {
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width: 767px) {
+    section {
+        display: flex;
+        height: 450px;
+        width: 600px;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+
+    .desktop-img {
+        border-radius: 15px 0 0 15px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 2rem;
+    }
+
+    .price-prev {
+        margin-left: 0.5rem;
+    }
+
+    a {
+        width: 85%;
+    }
+}
