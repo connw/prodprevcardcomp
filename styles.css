@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #F2EAE2;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    width: 100%;
+}
+
+main {
+    background-color: #FFF;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.product-category {
+    color: #6C7289;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.product-name {
+    color: #1C232B;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+}
+
+.product-description {
+    color: #6C7289;
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+
+.product-price {
+    color: #3D8168;
+    display: inline-block;
+    font-family: 'Fraunces', serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.product-price-prev {
+    color: #6C7289;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: line-through;
+    transform: translateY(-10px);
+}
+
+button {
+    all: unset;
+    background-color: #3D8168;
+    border-radius: 8px;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+}
+
+.shopping-cart {
+    padding-right: 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        height: auto;
+        width: 90%;
+    }
+
+    .product-image-desktop {
+        display: none;
+    }
+
+    .product-image-mobile {
+        border-radius: 15px 15px 0 0;
+        display: block;
+        width: 100%;
+    }
+
+    .content {
+        margin: 1rem;
+    }
+
+    .product-name,
+    .product-price {
+        margin: 1rem 0;
+    }
+
+    .product-price-prev {
+        margin-left: 1rem;
+    }
+
+    button {
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width: 767px) {
+    main {
+        display: flex;
+        height: 450px;
+        width: 600px;
+    }
+
+    .product-image-mobile {
+        display: none;
+    }
+
+    .product-image-desktop {
+        border-radius: 15px 0 0 15px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 2rem;
+    }
+
+    .product-price-prev {
+        margin-left: 0.5rem;
+    }
+
+    button {
+        width: 85%;
+    }
+
+    button:hover {
+        background-color: #1A4032;
+    }
+}
